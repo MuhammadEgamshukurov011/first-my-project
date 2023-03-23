@@ -50,12 +50,12 @@ img {
     color: white;
     text-decoration: none;
     position: relative;
-    padding: 15px 10px;
+    padding: 9px 9px;
     margin-left: 10px;
 }
 .a::before,
 .a::after {
-    box-shadow: -3px 4px 3px darkblue;
+    box-shadow: -4px 2px 3px darkblue;
     content: "";
     position: absolute;
     left: 0;
@@ -70,7 +70,8 @@ img {
 .a:hover::before{
     height: 100%;
     width: 2px;
-    box-shadow: -3px 9px 3px 3px rgb(9, 9, 147);
+    box-shadow: -2px 5px 2px 1px rgb(9, 9, 147);
+    right: 0;
 }
 .a::after {
     width: 100%;
@@ -78,7 +79,8 @@ img {
 }
 .a:hover::after {
     top: 100%;
-    box-shadow: 3px 9px 3px 3px  darkblue;
+    box-shadow: 2px 5px 2px 1px  darkblue;
+    right: 0;
 }
 .ul2 {
     display: flex;
@@ -99,7 +101,7 @@ img {
     letter-spacing: 1px;
 }
 .a2::before, .a2::after {
-    box-shadow: -3px 4px 5px #566473;
+    box-shadow: -1px 2px 4px white;
     content: "";
     position: absolute;
     width: 100%;
@@ -108,14 +110,17 @@ img {
     bottom: 0;
     left: 0;
     transition: .3s all linear;
+    border-radius: 5px;
 }
 .a2:hover::before {
     width: 100%;
     transform: scaleX(1.15);
+    box-shadow: -1px 2px 4px white;
 }
 .a2:hover::after {
     bottom: 100%;
     transform: scaleX(1.15);
+    box-shadow: -1px 2px 4px white;
 }
 .world {
     margin-top: 35px;
